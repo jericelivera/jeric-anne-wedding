@@ -369,6 +369,7 @@ rotate(360deg);
     text-align: center;
     padding: 60px 20px;
     background: #fdf8f3;
+    color: #2f5d50;   /* Default text color for this section */
 }
 
 .couple h2 {
@@ -383,18 +384,22 @@ rotate(360deg);
     color: #2f5d50;
 }
 
+.couple p {
+    color: #555 !important;
+}
+
 .couple .date {
+    color: #2f5d50 !important;
     font-size: 22px;
-    color: #5b5b5b; /* Dark gray */
-    margin: 20px 0;
+    font-weight: 600;
 }
 
 .couple-message {
+    color: #555 !important;
     max-width: 700px;
     margin: 30px auto;
     line-height: 1.8;
     font-size: 18px;
-    color: #555; /* Dark gray */
     padding: 0 20px;
 }
 
