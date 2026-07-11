@@ -487,6 +487,7 @@ rotate(360deg);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    gap: 10px;
 }
 
 .venue-image {
