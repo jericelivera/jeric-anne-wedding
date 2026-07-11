@@ -579,7 +579,7 @@ rotate(360deg);
     transform:scale(1.03);
 }
 /* ===========================
-   Elegant Wedding Envelope
+   Connected Wedding Envelope
 =========================== */
 
 .envelope-wrapper{
@@ -594,17 +594,14 @@ rotate(360deg);
 .envelope{
     width:190px;
     height:125px;
-    background:transparent;
     position:relative;
-    border-radius:8px;
-    overflow:visible;
-    box-shadow:none;
     animation:floatEnvelope 3s ease-in-out infinite;
 }
+
 .envelope::before{
     content:"";
     position:absolute;
-    top:25px;
+    bottom:0;
     left:0;
     width:190px;
     height:100px;
@@ -614,7 +611,6 @@ rotate(360deg);
     z-index:1;
 }
 
-/* Envelope flap */
 .flap{
     position:absolute;
     top:0;
@@ -623,19 +619,12 @@ rotate(360deg);
     height:0;
     border-left:95px solid transparent;
     border-right:95px solid transparent;
-    border-top:65px solid #dcc39c;
+    border-top:55px solid #dcc39c;
     transform-origin:top;
     transition:transform 1s ease;
     z-index:3;
 }
 
-/* Opening animation */
-.envelope.open .flap{
-    transform:rotateX(180deg);
-}
-
-
-/* Wax seal */
 .envelope::after{
     content:"J & A";
     position:absolute;
@@ -652,7 +641,6 @@ rotate(360deg);
     font-size:12px;
     font-weight:bold;
     z-index:5;
-    box-shadow:0 3px 8px rgba(0,0,0,.25);
 }
 
 @keyframes floatEnvelope{
