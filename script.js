@@ -82,3 +82,26 @@ document.getElementById("musicBtn").addEventListener("click",()=>{
 alert("Background music will be added in the next step.");
 
 });
+const rsvpForm = document.getElementById("rsvpForm");
+
+rsvpForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("name", document.getElementById("name").value);
+    formData.append("guests", document.getElementById("guests").value);
+    formData.append("attendance", document.getElementById("attendance").value);
+    formData.append("message", document.getElementById("message").value);
+
+    fetch("https://script.google.com/macros/s/AKfycbypwN6DCGE6EiIn0zaWHSi6OKcUkFimsazZ_g6SbW8x5bNIgEQ7iBd3z9Gs81EEq9ATWA/exec", {
+        method: "POST",
+        body: formData
+    })
+    .then(() => {
+        alert("🎉 Thank you! Your RSVP has been submitted.");
+        rsvpForm.reset();
+    })
+    .catch(() => {
+        alert("❌ Something went wrong. Please try again.");
+    });
+});
