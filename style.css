@@ -490,3 +490,19 @@ rotate(360deg);
     font-size: 20px;
     color: #f0f0f0;
 }
+.venue-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.venue-image {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.3);
+}
