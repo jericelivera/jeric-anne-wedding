@@ -489,8 +489,8 @@ rotate(360deg);
 }
 
 .venue-image {
-    width: 180%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1200px;
     display: block;
     margin: 0 auto;
     border-radius: 20px;
