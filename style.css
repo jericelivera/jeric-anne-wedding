@@ -126,7 +126,7 @@ header h1{
 }
 
 #timer span{
-    font-size:48px;
+    font-size:32px;
     color:#d8c27a;
     display:block;
 }
@@ -469,14 +469,6 @@ rotate(360deg);
     margin-bottom: 20px;
 }
 
-.venue-image {
-    width: 95vw;
-    max-width: 95vw;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 20px;
-}
 
 .venue h3 {
     color: white;
@@ -489,9 +481,17 @@ rotate(360deg);
     color: #f0f0f0;
 }
 .venue-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    flex-wrap: wrap;
-    margin: 25px 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.venue-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin: 8px auto;
 }
