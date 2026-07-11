@@ -487,11 +487,15 @@ rotate(360deg);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
 .venue-image {
     width: 100%;
-    border-radius: 20px;
+    height: auto;
     display: block;
+    border-radius: 20px;
 }
