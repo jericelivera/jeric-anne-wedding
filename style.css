@@ -489,12 +489,9 @@ rotate(360deg);
 }
 
 .venue-image {
-    width: 150%;
-    max-width: 150%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 700px;
     display: block;
-    margin: 8px auto;
+    margin: 0 auto;
+    border-radius: 20px;
 }
