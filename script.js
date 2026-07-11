@@ -20,6 +20,7 @@ const seconds = document.getElementById("seconds");
 openBtn.addEventListener("click", () => {
 
     loading.style.opacity = "0";
+    document.getElementById("bgMusic").play();
 
     setTimeout(() => {
         loading.style.display = "none";
