@@ -428,3 +428,32 @@ rotate(360deg);
     line-height: 1.9;
     color: #f5f5f5;
 }
+.attire {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.attire h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 58px;
+    color: #d8c27a;
+    margin-bottom: 20px;
+}
+
+.attire-subtitle {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.attire-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.3);
+}
+
+.attire-note {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+}
