@@ -21,7 +21,7 @@ function createLeaf() {
         0.4 + Math.random() * 0.6;
 
     // Random size
-    const scale = 0.4 + Math.random() * 1.2;
+    const scale = 0.4 + Math.random() * 3;
     leaf.style.transform = `scale(${scale})`;
 
     // Slight random delay so they don't all move together

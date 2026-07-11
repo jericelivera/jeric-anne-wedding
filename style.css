@@ -348,8 +348,8 @@ color:#d8c27a;
 .leaf{
     position:absolute;
     top:-20px;
-    width:6px;
-    height:6px;
+    width:8px;
+    height:8px;
     background:#d8c27a;
     border-radius:50%;
     box-shadow:
