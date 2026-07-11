@@ -593,7 +593,7 @@ rotate(360deg);
 .envelope-image{
     width:280px;
     max-width:85%;
-    filter:drop-shadow(0 15px 30px rgba(0,0,0,.35));
+    filter:drop-shadow(0 10px 10px rgba(0,0,0,.35));
     transition:transform .8s ease;
 }
 
