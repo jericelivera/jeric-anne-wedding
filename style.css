@@ -616,7 +616,8 @@ rotate(360deg);
 .tap-text{
     margin-top:10px;
     color:rgba(216,194,122,0.8);
-    font-size:12px;
+    font-size:5px !important;
     letter-spacing:1px;
     font-style:italic;
+    line-height:1.4;
 }
