@@ -17,9 +17,14 @@ const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
 // Open Invitation
+const envelope = document.querySelector(".envelope");
+
 openBtn.addEventListener("click", () => {
 
+    envelope.classList.add("open");
+
     loading.style.opacity = "0";
+
     document.getElementById("bgMusic").play();
 
     setTimeout(() => {
@@ -76,10 +81,17 @@ window.open(
 
 });
 
-// Music Button Placeholder
-document.getElementById("musicBtn").addEventListener("click",()=>{
+const bgMusic = document.getElementById("bgMusic");
 
-alert("Background music will be added in the next step.");
+document.getElementById("musicBtn").addEventListener("click", () => {
+
+    if (bgMusic.paused) {
+        bgMusic.play();
+        document.getElementById("musicBtn").innerHTML = "🔇 Pause Music";
+    } else {
+        bgMusic.pause();
+        document.getElementById("musicBtn").innerHTML = "🎵 Play Music";
+    }
 
 });
 const rsvpForm = document.getElementById("rsvpForm");

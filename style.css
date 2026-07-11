@@ -578,3 +578,38 @@ rotate(360deg);
 #rsvpForm button:hover{
     transform:scale(1.03);
 }
+/* ===========================
+   Envelope Animation
+=========================== */
+
+.envelope{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:25px 0;
+    transition:transform .8s ease;
+}
+
+.envelope-image{
+    width:280px;
+    max-width:85%;
+    filter:drop-shadow(0 15px 30px rgba(0,0,0,.35));
+    transition:transform .8s ease;
+}
+
+.envelope.open .envelope-image{
+    transform:scale(.95) rotateX(20deg);
+}
+
+@keyframes floatEnvelope{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+.envelope{
+    animation:floatEnvelope 3s ease-in-out infinite;
+}
