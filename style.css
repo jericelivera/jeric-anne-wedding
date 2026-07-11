@@ -464,7 +464,7 @@ rotate(360deg);
 
 .venue h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 10px;
+    font-size: 58px;
     color: #d8c27a;
     margin-bottom: 20px;
 }
@@ -490,7 +490,7 @@ rotate(360deg);
 
 .venue-image {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     display: block;
     margin: 0 auto;
     border-radius: 20px;
