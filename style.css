@@ -334,3 +334,34 @@ color:#d8c27a;
 .gold-btn:hover{
     transform:scale(1.05);
 }
+/* Falling Emerald Leaves */
+
+.leaf-container{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:5;
+}
+
+.leaf{
+    position:absolute;
+    top:-50px;
+    font-size:28px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-50px) rotate(0deg);
+}
+
+100%{
+transform:
+translateY(110vh)
+translateX(80px)
+rotate(360deg);
+}
+
+}
