@@ -622,24 +622,6 @@ rotate(360deg);
     transform:rotateX(180deg);
 }
 
-/* Letter inside */
-.paper{
-    position:absolute;
-    background:#fffdf8;
-    width:140px;
-    height:80px;
-    left:25px;
-    bottom:15px;
-    border-radius:4px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 3px 8px rgba(0,0,0,.15);
-    color:#0f5132;
-    font-family:serif;
-    font-size:13px;
-    letter-spacing:1px;
-}
 
 /* Wax seal */
 .envelope::after{
