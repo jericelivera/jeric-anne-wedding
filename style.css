@@ -613,3 +613,9 @@ rotate(360deg);
 .envelope{
     animation:floatEnvelope 3s ease-in-out infinite;
 }
+.tap-text{
+    margin-top:20px;
+    color:#d8c27a;
+    font-size:18px;
+    letter-spacing:2px;
+}
