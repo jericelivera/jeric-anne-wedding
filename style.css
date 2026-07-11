@@ -614,7 +614,7 @@ rotate(360deg);
 
 .flap{
     position:absolute;
-    top:-1px;
+    top:-10px;
     left:0;
     width:0;
     height:0;
