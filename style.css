@@ -1,0 +1,271 @@
+/* ===========================
+   Jeric & Anne Wedding Theme
+   Emerald Green Luxury
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cormorant Garamond',serif;
+    background:linear-gradient(180deg,#0c3b2e,#145a46,#1f7a5c);
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* Loading Screen */
+
+#loading{
+    position:fixed;
+    inset:0;
+    background:#0c3b2e;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    transition:1s;
+}
+
+.loading-content{
+    text-align:center;
+    padding:30px;
+}
+
+.loading-content h3{
+    font-size:24px;
+    letter-spacing:3px;
+    color:#d8c27a;
+    margin-bottom:20px;
+}
+
+.loading-content h1{
+    font-family:'Great Vibes',cursive;
+    font-size:58px;
+    color:white;
+}
+
+.loading-content p{
+    font-size:40px;
+    margin:15px;
+}
+
+#openBtn{
+    margin-top:40px;
+    padding:16px 45px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    background:#d8c27a;
+    color:#0c3b2e;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+#openBtn:hover{
+    transform:scale(1.05);
+}
+
+/* Main */
+
+#main{
+    display:none;
+    animation:fadeIn 1.2s ease;
+}
+
+header{
+    padding:100px 20px 60px;
+    text-align:center;
+}
+
+header h2{
+    color:#d8c27a;
+    letter-spacing:5px;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-family:'Great Vibes',cursive;
+    font-size:80px;
+}
+
+.date{
+    margin-top:20px;
+    font-size:28px;
+}
+
+/* Countdown */
+
+.countdown{
+    text-align:center;
+    padding:50px 20px;
+}
+
+#timer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+#timer div{
+    width:120px;
+    padding:25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+#timer span{
+    font-size:48px;
+    color:#d8c27a;
+    display:block;
+}
+/* Wedding Details */
+
+.details{
+    padding:60px 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.details p{
+    width:280px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    line-height:1.8;
+    font-size:20px;
+}
+
+/* Buttons */
+
+section{
+    text-align:center;
+    margin:40px 20px;
+}
+
+#mapBtn,
+#musicBtn{
+    background:#d8c27a;
+    color:#0c3b2e;
+    border:none;
+    padding:16px 35px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:all .3s ease;
+    margin:10px;
+}
+
+#mapBtn:hover,
+#musicBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+/* Footer */
+
+footer{
+    padding:40px 20px;
+    text-align:center;
+    color:#e9e9e9;
+    font-size:18px;
+}
+
+/* Fade Animation */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:58px;
+}
+
+.loading-content h1{
+    font-size:46px;
+}
+
+.date{
+    font-size:22px;
+}
+
+#timer div{
+    width:90px;
+    padding:18px;
+}
+
+#timer span{
+    font-size:34px;
+}
+
+.details p{
+    width:100%;
+}
+
+}
+/* Navigation */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.navbar .logo{
+font-family:'Great Vibes',cursive;
+font-size:34px;
+color:#d8c27a;
+}
+
+.navbar ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:#d8c27a;
+}
