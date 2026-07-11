@@ -459,12 +459,12 @@ rotate(360deg);
 }
 .venue {
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 8px;
 }
 
 .venue h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 10px;
+    font-size: 58px;
     color: #d8c27a;
     margin-bottom: 20px;
 }
