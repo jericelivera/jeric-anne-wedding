@@ -493,7 +493,7 @@ rotate(360deg);
     align-items: center;
     gap: 10px;
 
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.5);
     padding: 10px;
     border-radius: 25px;
     box-shadow: 0 10px 25px rgba(0,0,0,.15);
