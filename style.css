@@ -645,7 +645,7 @@ rotate(360deg);
 .envelope::after{
     content:"J & A";
     position:absolute;
-    top:48px;
+    top:45px;
     left:75px;
     width:40px;
     height:40px;
