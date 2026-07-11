@@ -464,7 +464,7 @@ rotate(360deg);
 
 .venue h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 58px;
+    font-size: 10px;
     color: #d8c27a;
     margin-bottom: 20px;
 }
@@ -481,17 +481,18 @@ rotate(360deg);
     color: #f0f0f0;
 }
 .venue-gallery {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;   /* Centers the images horizontally */
+    align-items: center;
     gap: 10px;
-    margin: 20px auto;
 }
 
 .venue-image {
-    width: 100%;
-    max-width: 1300px;
+    width: 95%;
+    max-width: none;
+    height: auto;
+    border-radius: 20px;
     display: block;
     margin: 0 auto;
-    border-radius: 20px;
 }
