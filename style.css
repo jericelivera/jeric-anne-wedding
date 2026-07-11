@@ -53,6 +53,7 @@ body{
 
 .loading-content p{
     font-size:40px;
+    color:#d8c27a;
     margin:15px;
 }
 
@@ -464,7 +465,7 @@ rotate(360deg);
 
 .venue h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 10px;
+    font-size: 58px;
     color: #d8c27a;
     margin-bottom: 20px;
 }
@@ -481,7 +482,7 @@ rotate(360deg);
     color: #f0f0f0;
 }
 .venue-gallery {
-    width: 100%;
+    width: 120%;
     padding: 0 8px;
     display: flex;
     flex-direction: column;
