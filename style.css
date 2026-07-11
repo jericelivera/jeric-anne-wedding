@@ -464,18 +464,18 @@ rotate(360deg);
 
 .venue h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 58px;
+    font-size: 32px;
     color: #d8c27a;
     margin-bottom: 20px;
 }
 
 .venue-image {
-    width: 100%;
-    max-width: 700px;
+    width: 95vw;
+    max-width: 95vw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 20px;
-    margin: 20px auto;
-    display: block;
-    box-shadow: 0 10px 25px rgba(0,0,0,.3);
 }
 
 .venue h3 {
