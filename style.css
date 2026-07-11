@@ -347,8 +347,14 @@ color:#d8c27a;
 
 .leaf{
     position:absolute;
-    top:-50px;
-    font-size:28px;
+    top:-20px;
+    width:6px;
+    height:6px;
+    background:#d8c27a;
+    border-radius:50%;
+    box-shadow:
+        0 0 6px rgba(216,194,122,.9),
+        0 0 12px rgba(216,194,122,.6);
     animation:fall linear forwards;
 }
 

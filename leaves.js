@@ -1,34 +1,39 @@
-// Falling Emerald Leaves
+// Falling Gold Flakes
 
 const leafContainer = document.createElement("div");
 leafContainer.className = "leaf-container";
 document.body.appendChild(leafContainer);
 
-function createLeaf(){
+function createLeaf() {
 
     const leaf = document.createElement("div");
-
     leaf.className = "leaf";
 
-    leaf.style.left = Math.random()*100+"vw";
+    // Random horizontal position
+    leaf.style.left = Math.random() * 100 + "vw";
 
+    // Random falling speed (6–12 seconds)
     leaf.style.animationDuration =
-        (6+Math.random()*6)+"s";
+        (6 + Math.random() * 6) + "s";
 
+    // Random opacity
     leaf.style.opacity =
-        0.4+Math.random()*0.6;
+        0.4 + Math.random() * 0.6;
 
-    leaf.style.transform =
-        `scale(${0.5+Math.random()})`;
+    // Random size
+    const scale = 0.4 + Math.random() * 1.2;
+    leaf.style.transform = `scale(${scale})`;
 
-    leaf.innerHTML="🍃";
+    // Slight random delay so they don't all move together
+    leaf.style.animationDelay =
+        Math.random() * 2 + "s";
 
     leafContainer.appendChild(leaf);
 
-    setTimeout(()=>{
+    setTimeout(() => {
         leaf.remove();
-    },12000);
-
+    }, 12000);
 }
 
-setInterval(createLeaf,700);
+// Create a new gold flake every 500ms
+setInterval(createLeaf, 500);
