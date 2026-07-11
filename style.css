@@ -493,14 +493,14 @@ rotate(360deg);
 .venue-gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 8px;
     flex-wrap: wrap;
     margin: 25px 0;
 }
 
 .venue-image {
     width: 95%;
-    max-width: 700px;
+    max-width: 900px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 20px;
