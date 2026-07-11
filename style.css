@@ -594,12 +594,24 @@ rotate(360deg);
 .envelope{
     width:190px;
     height:125px;
-    background:#f3e4cf;
+    background:transparent;
     position:relative;
     border-radius:8px;
     overflow:visible;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    box-shadow:none;
     animation:floatEnvelope 3s ease-in-out infinite;
+}
+.envelope::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:190px;
+    height:100px;
+    background:#f3e4cf;
+    border-radius:0 0 8px 8px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:1;
 }
 
 /* Envelope flap */
