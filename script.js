@@ -25,13 +25,16 @@ openBtn.addEventListener("click", () => {
 
     loading.style.opacity = "0";
 
-    document.getElementById("bgMusic").play();
+    const bgMusic = document.getElementById("bgMusic");
+    if (bgMusic) {
+        bgMusic.play();
+    }
 
     setTimeout(() => {
         loading.style.display = "none";
         main.style.display = "block";
         window.scrollTo(0,0);
-    },1000);
+    },1200);
 
 });
 
