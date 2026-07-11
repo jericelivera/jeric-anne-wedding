@@ -1,4 +1,3 @@
-alert("Leaves loaded!");
 // Falling Emerald Leaves
 
 const leafContainer = document.createElement("div");
