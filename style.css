@@ -579,7 +579,7 @@ rotate(360deg);
     transform:scale(1.03);
 }
 /* ===========================
-   CSS Envelope Animation
+   Elegant Wedding Envelope
 =========================== */
 
 .envelope-wrapper{
@@ -587,45 +587,78 @@ rotate(360deg);
     justify-content:center;
     align-items:center;
     cursor:pointer;
-    margin:20px 0;
+    margin:25px 0;
+    perspective:800px;
 }
 
 .envelope{
-    width:180px;
-    height:120px;
-    background:#e8d8c3;
+    width:190px;
+    height:125px;
+    background:#f3e4cf;
     position:relative;
-    border-radius:5px;
+    border-radius:8px;
     overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
     animation:floatEnvelope 3s ease-in-out infinite;
 }
 
+/* Envelope flap */
 .flap{
     position:absolute;
     top:0;
     left:0;
     width:0;
     height:0;
-    border-left:90px solid transparent;
-    border-right:90px solid transparent;
-    border-top:60px solid #d8c2a8;
+    border-left:95px solid transparent;
+    border-right:95px solid transparent;
+    border-top:65px solid #dcc39c;
     transform-origin:top;
-    transition:transform .8s ease;
+    transition:transform 1s ease;
+    z-index:3;
 }
 
+/* Opening animation */
 .envelope.open .flap{
     transform:rotateX(180deg);
 }
 
+/* Letter inside */
 .paper{
     position:absolute;
-    bottom:10px;
-    left:20px;
-    right:20px;
-    text-align:center;
+    background:#fffdf8;
+    width:140px;
+    height:80px;
+    left:25px;
+    bottom:15px;
+    border-radius:4px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+    color:#0f5132;
+    font-family:serif;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+/* Wax seal */
+.envelope::after{
+    content:"J & A";
+    position:absolute;
+    top:48px;
+    left:75px;
+    width:40px;
+    height:40px;
+    background:#0f5132;
+    color:#d8c27a;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     font-size:12px;
-    color:#6b4f35;
+    font-weight:bold;
+    z-index:4;
+    box-shadow:0 3px 8px rgba(0,0,0,.25);
 }
 
 @keyframes floatEnvelope{
@@ -638,9 +671,9 @@ rotate(360deg);
 }
 
 .tap-text{
-    margin-top:10px;
-    color:rgba(216,194,122,0.8);
-    font-size:12px !important;
-    letter-spacing:1px;
+    margin-top:12px;
+    color:#d8c27a;
+    font-size:11px !important;
+    letter-spacing:2px;
     font-style:italic;
 }
