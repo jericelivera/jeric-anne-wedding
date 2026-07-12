@@ -635,7 +635,7 @@ rotate(360deg);
 .letter{
     position:absolute;
     left:20px;
-    top:50px;
+    top:20px;
     width:220px;
     height:160px;
     background:#fffdf8;
@@ -705,8 +705,8 @@ rotate(360deg);
 .flap{
     position:absolute;
     top:0;
-    left:-20px;
-    width:300px;
+    left:-10px;
+    width:260px;
     height:100px;
     background:#dcc39c;
     clip-path:polygon(0 0,100% 0,50% 100%);
