@@ -360,7 +360,7 @@ color:#d8c27a;
 }
 .hero-day{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;          /* Same size the date used to be */
+    font-size: 1.2rem;          /* Same size the date used to be */
     color: #ffffff;           /* White */
     letter-spacing: 2px;
     text-transform: none;
@@ -369,9 +369,9 @@ color:#d8c27a;
 
 .hero-date{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;        /* Smaller than Thursday */
+    font-size: 1.7rem;        /* Smaller than Thursday */
     color: #f5e6c8;           /* Gold/Beige */
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: -5px;
 }
@@ -744,7 +744,6 @@ rotate(360deg);
     height:170px;
     background:#f3e4cf;
     border-radius:0 0 12px 12px;
-}
     z-index:1;
 }
 
