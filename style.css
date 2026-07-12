@@ -725,9 +725,10 @@ rotate(360deg);
 /* Letter rises */
 
 .envelope.open .letter{
-    transform:translateY(-95px);
-    transition-delay:.25s;
+    transform:translateY(-95px) !important;
     background:red !important;
+    border:5px solid blue !important;
+    transition-delay:.25s;
 }
 
 /* Floating animation */

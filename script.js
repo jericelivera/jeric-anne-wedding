@@ -49,6 +49,8 @@ setTimeout(() => {
     window.scrollTo(0, 0);
 }, 2500);
 
+});
+
 // Countdown
 setInterval(() => {
 
