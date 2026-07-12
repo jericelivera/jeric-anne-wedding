@@ -132,10 +132,18 @@ rsvpForm.addEventListener("submit", function (e) {
         body: formData
     })
     .then(() => {
-        submitBtn.textContent = "Submitted ✓";
-        alert("🎉 Thank you! Your RSVP has been submitted.");
-        rsvpForm.reset();
-    })
+    submitBtn.textContent = "Submitted ✓";
+
+    alert(
+        "💚 RSVP Received 💚\n\n" +
+        "Thank you for responding to our wedding invitation.\n\n" +
+        "Your RSVP has been successfully recorded.\n\n" +
+        "We look forward to celebrating this joyful occasion with you.\n\n" +
+        "With love,\nJeric & Anne"
+    );
+
+    rsvpForm.reset();
+})
     .catch(() => {
         submitBtn.disabled = false;
         submitBtn.textContent = "Submit RSVP";
