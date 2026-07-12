@@ -263,14 +263,13 @@ header h1{
 }
 
 #timer p{
-    width:100%;
+    width:120%;
     text-align:center;
     display:block;
     margin:8px auto 0;
     font-size:12px;
     line-height:1;
     white-space:nowrap;
-    transform:translateX(-5px);
 }
 
 .details p{
