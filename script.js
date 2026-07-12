@@ -115,6 +115,12 @@ const rsvpForm = document.getElementById("rsvpForm");
 rsvpForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
+    const submitBtn = rsvpForm.querySelector('button[type="submit"]');
+
+    // Prevent double submission
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitting...";
+
     const formData = new FormData();
     formData.append("name", document.getElementById("name").value);
     formData.append("guests", document.getElementById("guests").value);
@@ -126,10 +132,13 @@ rsvpForm.addEventListener("submit", function (e) {
         body: formData
     })
     .then(() => {
+        submitBtn.textContent = "Submitted ✓";
         alert("🎉 Thank you! Your RSVP has been submitted.");
         rsvpForm.reset();
     })
     .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit RSVP";
         alert("❌ Something went wrong. Please try again.");
     });
 });
