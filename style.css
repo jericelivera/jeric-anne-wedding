@@ -189,8 +189,8 @@ header h1{
     content:"";
     position:absolute;
     top:72px;
-    left:40px;
-    right:40px;
+    left:70px;
+    width:calc(100% - 140px);
     height:2px;
     background:#d8c27a;
     z-index:0;
