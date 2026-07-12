@@ -705,9 +705,9 @@ rotate(360deg);
 .flap{
     position:absolute;
     top:0;
-    left:0;
-    width:260px;
-    height:85px;
+    left:-5px;
+    width:270px;
+    height:90px;
     background:#dcc39c;
     clip-path:polygon(0 0,100% 0,50% 100%);
     transform-origin:top center;
@@ -718,14 +718,16 @@ rotate(360deg);
 /* Envelope opens */
 
 .envelope.open .flap{
-    transform:perspective(1000px) rotateX(135deg);
+    transform: perspective(1000px) rotateX(160deg);
+    transition: transform .8s ease;
 }
 
 /* Letter rises */
 
 .envelope.open .letter{
-    transform:translateY(-150px);
-    transition-delay:.25s;
+    transform: translateY(-140px);
+    transition: transform 1s cubic-bezier(.22,.61,.36,1);
+    transition-delay: .3s;
 }
 
 /* Floating animation */
