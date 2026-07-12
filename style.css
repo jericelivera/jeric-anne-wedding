@@ -249,20 +249,26 @@ header h1{
 #timer div{
     width:78px;
     height:110px;
-    padding:10px;
+    padding:15px;
     box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 #timer span{
     font-size:28px;
-    line-height:1.2;
+    line-height:1;
 }
 
 #timer p{
-    font-size:12px;
+    font-size:15px;
     margin-top:8px;
     line-height:1;
     text-align:center;
+    width:100%;
+    white-space:nowrap;
 }
 
 .details p{
