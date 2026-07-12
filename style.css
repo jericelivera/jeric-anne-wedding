@@ -727,6 +727,7 @@ rotate(360deg);
 .envelope.open .letter{
     transform:translateY(-95px);
     transition-delay:.25s;
+    background:red !important;
 }
 
 /* Floating animation */
