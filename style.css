@@ -663,3 +663,48 @@ rotate(360deg);
     letter-spacing:2px;
     font-style:italic;
 }
+.invitation-card{
+    position:absolute;
+    left:50%;
+    bottom:8px;
+    transform:translateX(-50%) translateY(70px);
+    width:160px;
+    height:220px;
+    background:#fffdf8;
+    border-radius:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    z-index:2;
+    padding:18px;
+    text-align:center;
+    transition:transform 1.2s cubic-bezier(.22,.61,.36,1);
+}
+
+.monogram{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#0f5132;
+    color:#d8c27a;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.invitation-card h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:18px;
+    color:#0f5132;
+}
+
+.invitation-card p{
+    margin-top:10px;
+    font-size:13px;
+    color:#666;
+}
+
+.envelope.open .invitation-card{
+    transform:translateX(-50%) translateY(-95px);
+}

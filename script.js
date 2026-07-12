@@ -23,20 +23,31 @@ openBtn.addEventListener("click", () => {
 
     envelope.classList.add("open");
 
-    loading.style.opacity = "0";
-
     const bgMusic = document.getElementById("bgMusic");
-    if (bgMusic) {
-        bgMusic.play();
-    }
+if (bgMusic) {
+    bgMusic.play();
+}
+
+// Wait for flap and card animation
+setTimeout(() => {
+    loading.style.transition = "opacity 1s ease";
+    loading.style.opacity = "0";
+}, 1500);
+
+// Show the main invitation
+setTimeout(() => {
+    loading.style.display = "none";
+    main.style.display = "block";
+
+    main.style.opacity = "0";
+    main.style.transition = "opacity 1s ease";
 
     setTimeout(() => {
-        loading.style.display = "none";
-        main.style.display = "block";
-        window.scrollTo(0,0);
-    },1200);
+        main.style.opacity = "1";
+    }, 50);
 
-});
+    window.scrollTo(0, 0);
+}, 2500);
 
 // Countdown
 setInterval(() => {
