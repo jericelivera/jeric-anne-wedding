@@ -848,10 +848,10 @@ rotate(360deg);
 .we-do{
     width:100%;
     text-align:center;
-    font-family:'Great Vibes', cursive;
-    font-size:clamp(72px, 14vw, 110px);
+    font-family:'Hello Honey', cursive;
+    font-size:clamp(72px,14vw,110px);
     color:#fff;
-    line-height:0.9;
+    line-height:1;
     margin-bottom:20px;
 }
 
@@ -859,4 +859,10 @@ rotate(360deg);
     color:#d4af37;
     font-size:0.9em;
     vertical-align:middle;
+}
+@font-face{
+    font-family:'Hello Honey';
+    src:url('fonts/HelloHoney.otf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
 }
