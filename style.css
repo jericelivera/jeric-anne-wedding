@@ -184,8 +184,7 @@ section{
     margin:40px 20px;
 }
 
-#mapBtn,
-#musicBtn{
+#mapBtn{
     background:#d8c27a;
     color:#0c3b2e;
     border:none;
@@ -196,6 +195,25 @@ section{
     cursor:pointer;
     transition:all .3s ease;
     margin:10px;
+}
+#musicBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+
+    background: #d8c27a;
+    color: #0c3b2e;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all .3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,.2);
+    z-index: 9999;
 }
 
 #mapBtn:hover,
@@ -860,4 +878,7 @@ rotate(360deg);
     100%{
         transform:translateY(110vh) translateX(60px) rotate(360deg);
     }
+}
+html{
+    scroll-behavior: smooth;
 }
