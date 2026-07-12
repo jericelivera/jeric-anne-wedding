@@ -719,7 +719,7 @@ rotate(360deg);
 .letter{
     position:absolute;
     left:20px;
-    top:20px;
+    top:10px;
     width:220px;
     height:180px;
     background:#fffdf8;
