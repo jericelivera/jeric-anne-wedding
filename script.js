@@ -18,12 +18,12 @@ const seconds = document.getElementById("seconds");
 
 // Open Invitation
 const envelope = document.querySelector(".envelope");
+const bgMusic = document.getElementById("bgMusic");
 
 openBtn.addEventListener("click", () => {
 
     envelope.classList.add("open");
 
-    const bgMusic = document.getElementById("bgMusic");
 if (bgMusic) {
     bgMusic.play();
 }
@@ -97,16 +97,18 @@ window.open(
 
 });
 
-const bgMusic = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
 
-document.getElementById("musicBtn").addEventListener("click", () => {
+musicBtn.innerHTML = "🔇";
+
+musicBtn.addEventListener("click", () => {
 
     if (bgMusic.paused) {
         bgMusic.play();
-        document.getElementById("musicBtn").innerHTML = "🔇 Pause Music";
+        musicBtn.innerHTML = "🎵";
     } else {
         bgMusic.pause();
-        document.getElementById("musicBtn").innerHTML = "🎵 Play Music";
+        musicBtn.innerHTML = "🔇";
     }
 
 });
