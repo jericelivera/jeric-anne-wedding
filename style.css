@@ -635,7 +635,7 @@ rotate(360deg);
 .letter{
     position:absolute;
     left:20px;
-    top:135px;
+    top:50px;
     width:220px;
     height:160px;
     background:#fffdf8;
@@ -706,13 +706,12 @@ rotate(360deg);
     position:absolute;
     top:0;
     left:0;
-    width:220px;
-    height:75px;
+    width:260px;
+    height:85px;
     background:#dcc39c;
     clip-path:polygon(0 0,100% 0,50% 100%);
-    transform-origin:50% 0%;
-    backface-visibility:hidden;
-    transition:transform .9s cubic-bezier(.4,0,.2,1);
+    transform-origin:top center;
+    transition:transform .9s ease;
     z-index:10;
 }
 
