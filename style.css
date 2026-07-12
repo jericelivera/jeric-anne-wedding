@@ -705,8 +705,8 @@ rotate(360deg);
 .flap{
     position:absolute;
     top:0;
-    left:-5px;
-    width:270px;
+    left:-20px;
+    width:300px;
     height:90px;
     background:#dcc39c;
     clip-path:polygon(0 0,100% 0,50% 100%);
