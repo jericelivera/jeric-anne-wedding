@@ -25,7 +25,15 @@ openBtn.addEventListener("click", () => {
     envelope.classList.add("open");
 
 if (bgMusic) {
-    bgMusic.play();
+    bgMusic.volume = 0.5;
+
+    bgMusic.play()
+    .then(() => {
+        console.log("Music started");
+    })
+    .catch((error) => {
+        console.log("Music blocked:", error);
+    });
 }
 
 // Wait for flap and card animation
