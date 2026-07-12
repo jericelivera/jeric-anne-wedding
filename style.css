@@ -602,7 +602,8 @@ rotate(360deg);
 .opening-name{
     color:#fff;
     font-size:42px;
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Great Vibes', cursive;
+    font-weight:400;
     margin:0;
 }
 
@@ -705,7 +706,7 @@ rotate(360deg);
 .flap{
     position:absolute;
     top:0;
-    left:-20px;
+    left:0px;
     width:260px;
     height:100px;
     background:#dcc39c;
