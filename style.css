@@ -190,7 +190,7 @@ header h1{
     position:absolute;
     top:72px;
     left:70px;
-    width:calc(100% - 140px);
+    width:850px;   /* Adjust to fit all 6 events */
     height:2px;
     background:#d8c27a;
     z-index:0;
