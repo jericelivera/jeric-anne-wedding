@@ -156,3 +156,11 @@ rsvpForm.addEventListener("submit", function (e) {
 
     rsvpForm.reset();
 })
+.catch(() => {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit RSVP";
+    alert("❌ Something went wrong. Please try again.");
+});
+
+});;
+})
