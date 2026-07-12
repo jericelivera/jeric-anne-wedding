@@ -364,11 +364,11 @@ color:#d8c27a;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: #f5e6c8;
-    margin-bottom: 2px;   /* Reduce space below Thursday */
+    margin-bottom: 0px;   /* Reduce space below Thursday */
 }
 
 .hero-date{
-    margin-top: 0;         /* Remove extra space above the date */
+    margin-top: -5px;         /* Remove extra space above the date */
 }
 
 .hero-time{
