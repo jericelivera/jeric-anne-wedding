@@ -249,7 +249,7 @@ header h1{
 #timer div{
     width:78px;
     height:110px;
-    padding:15px;
+    padding:0px;
     box-sizing:border-box;
     display:flex;
     flex-direction:column;
@@ -263,7 +263,7 @@ header h1{
 }
 
 #timer p{
-    width:120%;
+    width:100%;
     text-align:center;
     display:block;
     margin:8px auto 0;
