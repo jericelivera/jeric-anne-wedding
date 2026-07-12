@@ -360,15 +360,20 @@ color:#d8c27a;
 }
 .hero-day{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #f5e6c8;
-    margin-bottom: 0px;   /* Reduce space below Thursday */
+    font-size: 1.4rem;          /* Same size the date used to be */
+    color: #ffffff;           /* White */
+    letter-spacing: 2px;
+    text-transform: none;
+    margin-bottom: 0px;
 }
 
 .hero-date{
-    margin-top: -5px;         /* Remove extra space above the date */
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;        /* Smaller than Thursday */
+    color: #f5e6c8;           /* Gold/Beige */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: -5px;
 }
 
 .hero-time{
