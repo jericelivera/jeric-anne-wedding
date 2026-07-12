@@ -634,15 +634,14 @@ rotate(360deg);
 .letter{
     position:absolute;
     left:15px;
-    bottom:10px;
+    bottom:-135px;
     width:190px;
     height:190px;
     background:#fffdf8;
     border-radius:10px;
     box-shadow:0 12px 30px rgba(0,0,0,.18);
-    transform:translateY(145px);
     transition:transform 1.3s cubic-bezier(.22,.61,.36,1);
-    z-index:2;
+    z-index:3;
 }
 
 .letter-content{
@@ -725,10 +724,7 @@ rotate(360deg);
 /* Letter rises */
 
 .envelope.open .letter{
-    transform:translateY(-95px) !important;
-    background:red !important;
-    border:5px solid blue !important;
-    transition-delay:.25s;
+    transform:translateY(-135px);
 }
 
 /* Floating animation */
