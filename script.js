@@ -163,4 +163,3 @@ rsvpForm.addEventListener("submit", function (e) {
 });
 
 });;
-})
