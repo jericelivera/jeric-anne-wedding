@@ -131,22 +131,28 @@ rsvpForm.addEventListener("submit", function (e) {
         method: "POST",
         body: formData
     })
-    .then(() => {
+.then(() => {
     submitBtn.textContent = "Submitted ✓";
 
-    alert(
-        "💚 RSVP Received 💚\n\n" +
-        "Thank you for responding to our wedding invitation.\n\n" +
-        "Your RSVP has been successfully recorded.\n\n" +
-        "We look forward to celebrating this joyful occasion with you.\n\n" +
-        "With love,\nJeric & Anne"
-    );
+    const attendance = document.getElementById("attendance").value;
+
+    if (attendance === "Yes") {
+        alert(
+            "💚 RSVP Received 💚\n\n" +
+            "Thank you for accepting our wedding invitation!\n\n" +
+            "Your RSVP has been successfully recorded.\n\n" +
+            "We can't wait to celebrate with you on Thursday, January 7, 2027.\n\n" +
+            "With love,\nJeric & Anne"
+        );
+    } else {
+        alert(
+            "💚 RSVP Received 💚\n\n" +
+            "Thank you for letting us know.\n\n" +
+            "Although we're sorry you won't be able to join us, we truly appreciate your response.\n\n" +
+            "We wish you all the best and hope to celebrate together another time.\n\n" +
+            "With love,\nJeric & Anne"
+        );
+    }
 
     rsvpForm.reset();
 })
-    .catch(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Submit RSVP";
-        alert("❌ Something went wrong. Please try again.");
-    });
-});
