@@ -845,3 +845,20 @@ rotate(360deg);
         transform:translateY(110vh) translateX(60px) rotate(360deg);
     }
 }
+.we-do{
+    width:100%;
+    text-align:center;
+    font-family:'Great Vibes', cursive;
+    font-size:clamp(72px, 12vw, 110px);
+    color:#ffffff;
+    margin-bottom:18px;
+    line-height:1;
+    letter-spacing:2px;
+}
+
+.we-do .heart{
+    color:#d4af37;
+    font-size:0.9em;
+    display:inline-block;
+    transform:translateY(-2px);
+}
