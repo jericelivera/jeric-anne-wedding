@@ -719,7 +719,10 @@ rotate(360deg);
 
 .envelope.open .flap{
     transform: perspective(1000px) rotateX(160deg);
-    transition: transform .8s ease;
+    opacity: 0;
+    transition:
+        transform .8s ease,
+        opacity .25s ease .55s;
 }
 
 /* Letter rises */
