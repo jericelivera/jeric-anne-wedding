@@ -623,6 +623,7 @@ rotate(360deg);
     width:220px;
     height:150px;
     animation:floatEnvelope 4s ease-in-out infinite;
+    perspective:1000px;
 }
 
 /* Letter */
@@ -630,16 +631,15 @@ rotate(360deg);
 .letter{
     position:absolute;
     left:15px;
-    bottom:15px;
+    bottom:10px;
     width:190px;
     height:240px;
     background:#fffdf8;
-    border-radius:8px;
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
-    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
     transform:translateY(120px);
-    transition:transform 1.4s cubic-bezier(.22,.61,.36,1);
-    z-index:1;
+    transition:transform 1.3s cubic-bezier(.22,.61,.36,1);
+    z-index:2;
 }
 
 .letter-content{
@@ -686,11 +686,12 @@ rotate(360deg);
 
 .envelope-front{
     position:absolute;
+    left:0;
     bottom:0;
     width:220px;
-    height:95px;
+    height:110px;
     background:#ead7b8;
-    clip-path:polygon(0 0,50% 60%,100% 0,100% 100%,0 100%);
+    clip-path:polygon(0 0,50% 65%,100% 0,100% 100%,0 100%);
     border-radius:0 0 10px 10px;
     z-index:4;
 }
