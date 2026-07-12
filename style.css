@@ -707,7 +707,7 @@ rotate(360deg);
     top:0;
     left:-20px;
     width:300px;
-    height:90px;
+    height:100px;
     background:#dcc39c;
     clip-path:polygon(0 0,100% 0,50% 100%);
     transform-origin:top center;
@@ -764,4 +764,12 @@ rotate(360deg);
         opacity:1;
     }
 
+}
+.letter-invite{
+    margin-top:20px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    color:#0f5132;
+    text-align:center;
+    line-height:1.4;
 }
