@@ -175,13 +175,13 @@ header h1{
     position:relative;
     max-width:650px;
     margin:auto;
-    padding-left:100px;
+    padding-left:70px;
 }
 
 .timeline-vertical::before{
     content:"";
     position:absolute;
-    left:39px;
+    left:109px;
     top:0;
     bottom:0;
     width:3px;
