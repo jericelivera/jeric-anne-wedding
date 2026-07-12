@@ -578,142 +578,184 @@ rotate(360deg);
 #rsvpForm button:hover{
     transform:scale(1.03);
 }
-/* ===========================
-   Connected Wedding Envelope
-=========================== */
+/* ===============================
+   Luxury Wedding Envelope
+================================= */
+
+.opening-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.opening-subtitle{
+    color:#d8c27a;
+    font-size:18px;
+    font-style:italic;
+    margin-bottom:15px;
+}
+
+.opening-name{
+    color:#fff;
+    font-size:42px;
+    font-family:'Cormorant Garamond',serif;
+    margin:0;
+}
+
+.and{
+    color:#d8c27a;
+    font-size:28px;
+    margin:10px 0;
+}
 
 .envelope-wrapper{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    margin-top:40px;
     cursor:pointer;
-    margin:25px 0;
-    perspective:800px;
+    perspective:1200px;
 }
 
 .envelope{
-    width:190px;
-    height:125px;
     position:relative;
-    animation:floatEnvelope 3s ease-in-out infinite;
-    transform-style:preserve-3d;
+    width:220px;
+    height:150px;
+    animation:floatEnvelope 4s ease-in-out infinite;
 }
 
-.envelope::before{
-    content:"";
+/* Letter */
+
+.letter{
     position:absolute;
-    bottom:0;
-    left:0;
+    left:15px;
+    bottom:15px;
     width:190px;
-    height:105px;
-    background:#f3e4cf;
-    border-radius:0 0 8px 8px;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-    z-index:1;
-}
-
-.flap{
-    position:absolute;
-    top:-10px;
-    left:0;
-    width:0;
-    height:0;
-    border-left:95px solid transparent;
-    border-right:95px solid transparent;
-    border-top:60px solid #dcc39c;
-    transform-origin:top;
-    transition:transform 1s ease;
-    z-index:3;
-}
-.envelope.open .flap{
-    transform:rotateX(180deg) translateY(-5px);
-}
-
-.envelope::after{
-    content:"J & A";
-    position:absolute;
-    top:45px;
-    left:75px;
-    width:40px;
-    height:40px;
-    background:#0f5132;
-    color:#d8c27a;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:12px;
-    font-weight:bold;
-    z-index:5;
-}
-
-@keyframes floatEnvelope{
-    0%,100%{
-        transform:translateY(0);
-    }
-    50%{
-        transform:translateY(-8px);
-    }
-}
-
-.tap-text{
-    margin-top:12px;
-    color:#d8c27a;
-    font-size:11px !important;
-    letter-spacing:2px;
-    font-style:italic;
-}
-.invitation-card{
-    position:absolute;
-    left:50%;
-    bottom:8px;
-    transform:translateX(-50%) translateY(70px);
-    width:160px;
-    height:220px;
+    height:240px;
     background:#fffdf8;
     border-radius:8px;
     box-shadow:0 10px 25px rgba(0,0,0,.18);
-    z-index:2;
-    padding:18px;
-    text-align:center;
-    transition:transform 1.2s cubic-bezier(.22,.61,.36,1);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-50%) translateY(70px);
-    transition:
-        transform 1.2s cubic-bezier(.22,.61,.36,1),
-        opacity 0.3s ease;
+    overflow:hidden;
+    transform:translateY(120px);
+    transition:transform 1.4s cubic-bezier(.22,.61,.36,1);
+    z-index:1;
 }
+
+.letter-content{
+    padding:25px;
+    text-align:center;
 }
 
 .monogram{
-    width:55px;
-    height:55px;
+    width:65px;
+    height:65px;
+    margin:auto;
     border-radius:50%;
     background:#0f5132;
     color:#d8c27a;
-    margin:0 auto 18px;
     display:flex;
     align-items:center;
     justify-content:center;
+    font-size:22px;
     font-weight:bold;
-    font-size:18px;
 }
 
-.invitation-card h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size:18px;
+.letter h3{
+    margin-top:20px;
     color:#0f5132;
+    font-size:22px;
 }
 
-.invitation-card p{
-    margin-top:10px;
-    font-size:13px;
+.letter p{
     color:#666;
 }
 
-.envelope.open .invitation-card{
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(-95px);
+/* Back */
+
+.envelope-back{
+    position:absolute;
+    width:220px;
+    height:150px;
+    background:#f3e4cf;
+    border-radius:10px;
+    z-index:2;
+}
+
+/* Front Pocket */
+
+.envelope-front{
+    position:absolute;
+    bottom:0;
+    width:220px;
+    height:95px;
+    background:#ead7b8;
+    clip-path:polygon(0 0,50% 60%,100% 0,100% 100%,0 100%);
+    border-radius:0 0 10px 10px;
+    z-index:4;
+}
+/* ===============================
+   Flap
+================================= */
+
+.flap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    border-left:110px solid transparent;
+    border-right:110px solid transparent;
+    border-top:75px solid #dcc39c;
+    transform-origin:top center;
+    transition:transform 1s cubic-bezier(.22,.61,.36,1);
+    z-index:5;
+}
+
+/* Envelope opens */
+
+.envelope.open .flap{
+    transform:rotateX(135deg);
+}
+
+/* Letter rises */
+
+.envelope.open .letter{
+    transform:translateY(-90px);
+}
+
+/* Floating animation */
+
+@keyframes floatEnvelope{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+}
+
+/* Tap text */
+
+.tap-text{
+    margin-top:20px;
+    color:#d8c27a;
+    letter-spacing:3px;
+    font-size:12px;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%,100%{
+        opacity:.5;
+    }
+
+    50%{
+        opacity:1;
+    }
+
 }
