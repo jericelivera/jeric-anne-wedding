@@ -175,6 +175,7 @@ header h1{
     position:relative;
     max-width:650px;
     margin:auto;
+    padding-left:60px;
 }
 
 .timeline-vertical::before{
