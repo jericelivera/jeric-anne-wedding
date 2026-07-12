@@ -626,6 +626,8 @@ rotate(360deg);
     perspective:1000px;
     transform-style:preserve-3d;
     animation:floatEnvelope 4s ease-in-out infinite;
+    overflow:hidden;
+    border-radius:12px;
 }
 
 /* Letter */
