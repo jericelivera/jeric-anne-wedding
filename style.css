@@ -190,8 +190,8 @@ header h1{
 .event{
     display:flex;
     align-items:center;
-    gap:25px;
-    margin-bottom:45px;
+    gap:10px;
+    margin-bottom:70px;
     position:relative;
 }
 
