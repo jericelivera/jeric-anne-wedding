@@ -185,16 +185,25 @@ header h1{
     display:none;
 }
 
-.timeline::before{
-    content:"";
+.timeline{
+    position:relative;
+    display:flex;
+    gap:35px;
+    overflow-x:auto;
+    padding:20px 70px;
+    width:max-content;
+}
+
+.timeline-line{
     position:absolute;
     top:72px;
     left:70px;
-    width:850px;   /* Adjust to fit all 6 events */
+    width:calc(100% - 140px);
     height:2px;
     background:#d8c27a;
     z-index:0;
 }
+
 
 .event{
     min-width:140px;
