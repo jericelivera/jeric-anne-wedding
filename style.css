@@ -200,26 +200,30 @@ section{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    left: auto;
 
-    background: #d8c27a;
-    color: #0c3b2e;
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
     border: none;
-    padding: 14px 22px;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: bold;
+
+    background: rgba(16, 92, 68, 0.9); /* emerald green */
+    color: #fff;
+
+    font-size: 22px;
     cursor: pointer;
 
-    transition: all .3s ease;
-    box-shadow: 0 6px 15px rgba(0,0,0,.2);
-    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
 }
 
 #mapBtn:hover,
 #musicBtn:hover{
-    transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transform: scale(1.08);
+    transition: 0.3s;
 }
 
 /* Footer */
