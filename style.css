@@ -263,11 +263,12 @@ header h1{
 }
 
 #timer p{
-    font-size:15px;
-    margin-top:8px;
-    line-height:1;
-    text-align:center;
     width:100%;
+    text-align:center;
+    display:block;
+    margin:8px auto 0;
+    font-size:12px;
+    line-height:1;
     white-space:nowrap;
 }
 
