@@ -899,7 +899,7 @@ rotate(360deg);
     height: 40px;
     border-radius: 50%;
     position: absolute;
-    top: -30px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
 
