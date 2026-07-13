@@ -829,10 +829,11 @@ rotate(360deg);
 .letter{
     position:absolute;
     left:20px;
-    top:10px;
+    top:20px;
     width:220px;
-    height:180px;
-    background:#fffdf8;
+    height:160px;
+    background:linear-gradient(135deg,#0f5c4a,#166b56,#1d7a61);
+    color:#d4af37; /* Same gold as "Together with our families" */
     border-radius:10px;
     box-shadow:0 12px 30px rgba(0,0,0,.18);
     transition:transform 1.2s cubic-bezier(.22,.61,.36,1);
@@ -842,6 +843,7 @@ rotate(360deg);
 .letter-content{
     padding:25px;
     text-align:center;
+    color:#d4af37;
 }
 
 .monogram{
@@ -860,12 +862,14 @@ rotate(360deg);
 
 .letter h3{
     margin-top:20px;
+    color:#d4af37;
     color:#0f5132;
     font-size:22px;
 }
 
 .letter p{
     color:#666;
+    color:#d4af37;
 }
 
 /* Back */
