@@ -416,6 +416,25 @@ transition:.3s;
 .navbar a:hover{
 color:#d8c27a;
 }
+@media (max-width:768px){
+
+    .navbar{
+        padding:10px 15px;
+    }
+
+    .navbar .logo{
+        font-size:24px;
+    }
+
+    .navbar ul{
+        gap:10px;
+    }
+
+    .navbar a{
+        font-size:14px;
+    }
+
+}
 /* Hero Section */
 
 .hero{
