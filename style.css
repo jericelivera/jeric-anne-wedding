@@ -423,8 +423,19 @@ color:#d8c27a;
     }
 
     .navbar .logo{
-        font-size:24px;
-    }
+    width:55px;
+    height:55px;
+    border:2px solid #d8c27a;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Great Vibes',cursive;
+    font-size:32px;
+    color:#d8c27a;
+    letter-spacing:-2px;
+}
 
     .navbar ul{
         gap:10px;
