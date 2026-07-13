@@ -903,7 +903,7 @@ rotate(360deg);
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
-    z-index: 5;
+    z-index: 10;
 }
 /* ===============================
    Flap
@@ -919,7 +919,7 @@ rotate(360deg);
     clip-path:polygon(0 0,100% 0,50% 100%);
     transform-origin:top center;
     transition:transform .9s ease;
-    z-index:10;
+    z-index:6;
 }
 
 /* Envelope opens */
