@@ -175,10 +175,18 @@ rsvpForm.addEventListener("submit", function (e) {
 });
 const header = document.querySelector("header");
 
+let lastScroll = 0;
+
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        header.classList.add("shrink");
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 80) {
+        // Scrolling down
+        header.classList.add("hide");
     } else {
-        header.classList.remove("shrink");
+        // Scrolling up
+        header.classList.remove("hide");
     }
+
+    lastScroll = currentScroll;
 });

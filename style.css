@@ -975,16 +975,20 @@ header{
     z-index: 1000;
 }
 
-header.scrolled{
+header.shrink{
     padding: 8px 40px;
     background: rgba(10, 60, 45, 0.95);
     backdrop-filter: blur(10px);
 }
 
-header.scrolled .logo{
-    font-size: 28px;   /* smaller logo */
+header.shrink .logo{
+    font-size: 28px;
 }
 
-header.scrolled nav a{
-    font-size: 15px;   /* smaller menu text */
+header.shrink nav a{
+    font-size: 15px;
+}
+
+header.hide{
+    transform: translateY(-100%);
 }
