@@ -395,9 +395,17 @@ z-index:1000;
 }
 
 .navbar .logo{
-font-family:'Great Vibes',cursive;
-font-size:34px;
-color:#d8c27a;
+    font-family:'Great Vibes',cursive;
+    font-size:42px;
+    color:#d8c27a;
+    display:flex;
+    align-items:center;
+}
+
+.navbar .logo small{
+    font-size:24px;
+    margin:0 5px;
+    font-family:'Cormorant Garamond',serif;
 }
 
 .navbar ul{
@@ -423,7 +431,11 @@ color:#d8c27a;
     }
 
     .navbar .logo{
-        font-size:24px;
+        font-size:28px;
+    }
+
+    .navbar .logo small{
+        font-size:16px;
     }
 
     .navbar ul{
