@@ -895,11 +895,11 @@ rotate(360deg);
     z-index:4;
 }
 .seal {
-    width: 85px;
-    height: 85px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     position: absolute;
-    top: -15px;
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
 
