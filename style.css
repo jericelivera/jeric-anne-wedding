@@ -894,49 +894,25 @@ rotate(360deg);
     border:2px solid #d8c27a;
     z-index:4;
 }
-.wax-seal{
-    position:absolute;
-    left:50%;
-    top:75%;
-    transform:translate(-50%,-50%);
-
-    width:75px;
-    height:75px;
-    border-radius:50%;
+.seal {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
 
     background:
-    radial-gradient(circle at 35% 30%,
-        #3b8f6a,
-        #0b5a3b 60%,
-        #063522 100%);
+        radial-gradient(circle at 30% 25%, rgba(255,255,255,.35), transparent 25%),
+        linear-gradient(145deg, #d4af37, #9a6b20 60%, #6e4515);
 
-    border:2px solid #042b1b;
+    border: 2px solid #b88a2d;
 
     box-shadow:
-        0 5px 8px rgba(0,0,0,.35),
-        inset 0 0 8px rgba(0,0,0,.35),
-        inset 2px 2px 5px rgba(255,255,255,.12);
-
-    z-index:20;
-}
-
-/* textured wax surface */
-.wax-seal::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    border-radius:50%;
-
-    background:
-    repeating-radial-gradient(
-        circle,
-        rgba(255,255,255,.08) 0px,
-        rgba(255,255,255,.08) 1px,
-        transparent 2px,
-        transparent 5px
-    );
-
-    opacity:.45;
+        0 5px 12px rgba(0,0,0,.25),
+        inset 0 2px 5px rgba(255,255,255,.25),
+        inset 0 -5px 8px rgba(0,0,0,.25);
 }
 /* ===============================
    Flap
