@@ -845,6 +845,7 @@ rotate(360deg);
     height:190px;
     background:#f3e4cf;
     border-radius:0 0 12px 12px;
+    border:3px solid #d8c27a;
     z-index:1;
 }
 
@@ -859,6 +860,7 @@ rotate(360deg);
     background:#ead7b8;
     clip-path:polygon(0 0,50% 65%,100% 0,100% 100%,0 100%);
     border-radius:0 0 12px 12px;
+    border:2px solid #d8c27a;
     z-index:4;
 }
 /* ===============================
