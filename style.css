@@ -880,21 +880,34 @@ rotate(360deg);
     border:3px solid #e7d19a;
 
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
-    font-family:'Great Vibes',cursive;
-    font-size:21px;
-    font-weight:normal;
-    color:#e7d19a;
-    line-height:1;
-
-    text-shadow:0 1px 2px rgba(0,0,0,.35);
     box-shadow:
         0 6px 14px rgba(0,0,0,.25),
-        inset 0 2px 3px rgba(255,255,255,.18);
+        inset 0 2px 3px rgba(255,255,255,.15);
 
-    z-index:8;
+    overflow:hidden;
+}
+
+.seal .j,
+.seal .a{
+    position:absolute;
+    font-family:'Great Vibes', cursive;
+    font-size:28px;
+    color:#e7d19a;
+    line-height:1;
+    text-shadow:0 1px 2px rgba(0,0,0,.35);
+}
+
+.seal .j{
+    left:15px;
+    top:12px;
+}
+
+.seal .a{
+    left:26px;
+    top:14px;
 }
 /* ===============================
    Flap
