@@ -900,24 +900,46 @@ rotate(360deg);
     top:75%;
     transform:translate(-50%,-50%);
 
-    width:75px;
-    height:75px;
+    width:80px;
+    height:80px;
     border-radius:50%;
 
     background:
-    radial-gradient(circle at 35% 30%,
-    #d6b56a,
-    #a67c32 45%,
-    #6e4d1d 100%);
+    radial-gradient(circle at 30% 25%,
+        #f0d58a 0%,
+        #c49a45 35%,
+        #8a6428 70%,
+        #5d421b 100%);
 
-    border:2px solid #5c3f18;
+    border:3px solid #9a712d;
 
     box-shadow:
-    0 8px 18px rgba(0,0,0,.4),
-    inset 0 5px 10px rgba(255,255,255,.18),
-    inset 0 -8px 15px rgba(70,40,10,.45);
+        0 10px 20px rgba(0,0,0,.35),
+        inset 0 8px 12px rgba(255,255,255,.25),
+        inset 0 -12px 18px rgba(60,35,10,.45);
 
     z-index:20;
+
+    overflow:hidden;
+}
+
+/* Wax texture */
+.wax-seal::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    repeating-radial-gradient(
+        circle,
+        rgba(255,255,255,.12) 0px,
+        rgba(255,255,255,.12) 1px,
+        transparent 2px,
+        transparent 5px
+    );
+
+    opacity:.35;
+    mix-blend-mode:overlay;
 }
 /* ===============================
    Flap
