@@ -869,25 +869,32 @@ rotate(360deg);
 .seal{
     position:absolute;
     left:50%;
-    top:95px;          /* Adjust until it sits at the center of the flap */
+    top:96px;
     transform:translateX(-50%);
-    width:52px;
-    height:52px;
+
+    width:54px;
+    height:54px;
     border-radius:50%;
-    background:#145a46;
-    border:2px solid #f5e8c8;
+
+    background:linear-gradient(145deg,#0f4f3d,#1a6b54);
+    border:3px solid #e7d19a;
 
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
 
-    color:#d8c27a;
-    font-family:'Great Vibes', cursive;
-    font-size:18px;
+    font-family:'Great Vibes',cursive;
+    font-size:21px;
+    font-weight:normal;
+    color:#e7d19a;
+    line-height:1;
 
-    box-shadow:0 4px 10px rgba(0,0,0,.25);
+    text-shadow:0 1px 2px rgba(0,0,0,.35);
+    box-shadow:
+        0 6px 14px rgba(0,0,0,.25),
+        inset 0 2px 3px rgba(255,255,255,.18);
 
-    z-index:10;   /* Higher than the flap */
+    z-index:8;
 }
 /* ===============================
    Flap
