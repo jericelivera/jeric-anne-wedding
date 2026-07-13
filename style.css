@@ -903,7 +903,7 @@ rotate(360deg);
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 15;
 }
 /* ===============================
    Flap
