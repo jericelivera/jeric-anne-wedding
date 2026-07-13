@@ -435,7 +435,7 @@ color:#d8c27a;
     }
 
     .navbar .logo small{
-        font-size:16px;
+        font-size:14px;
     }
 
     .navbar ul{
@@ -681,7 +681,7 @@ rotate(360deg);
     color: #f0f0f0;
 }
 .venue-gallery {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     position: relative;
     left: 50%;
