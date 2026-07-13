@@ -894,6 +894,54 @@ rotate(360deg);
     border:2px solid #d8c27a;
     z-index:4;
 }
+.wax-seal{
+    position:absolute;
+    left:50%;
+    top:75%;
+    transform:translate(-50%,-50%);
+
+    width:75px;
+    height:75px;
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle at 30% 30%, #3f8a68, #064d35);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#d8c27a;
+    font-family:'Great Vibes',cursive;
+    font-size:34px;
+
+    border:3px solid rgba(216,194,122,.5);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.35),
+        inset 0 0 15px rgba(0,0,0,.3);
+
+    z-index:20;
+}
+
+.wax-seal span{
+    font-family:'Cormorant Garamond',serif;
+    font-size:18px;
+    margin:0 3px;
+}
+@media(max-width:768px){
+
+    .wax-seal{
+        width:60px;
+        height:60px;
+        font-size:26px;
+    }
+
+    .wax-seal span{
+        font-size:14px;
+    }
+
+}
 /* ===============================
    Flap
 ================================= */
