@@ -437,7 +437,7 @@ color:#d8c27a;
 
 .hero-content{
     position:relative;
-    z-index:2;
+    z-index:10;
     padding:20px;
 }
 
