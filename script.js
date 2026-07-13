@@ -173,19 +173,17 @@ rsvpForm.addEventListener("submit", function (e) {
 });
 
 });
-const header = document.querySelector("header");
+const navbar = document.querySelector(".navbar");
 
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > lastScroll && currentScroll > 80) {
-        // Scrolling down
-        header.classList.add("hide");
+    if (currentScroll > lastScroll && currentScroll > 100) {
+        navbar.classList.add("hide");
     } else {
-        // Scrolling up
-        header.classList.remove("hide");
+        navbar.classList.remove("hide");
     }
 
     lastScroll = currentScroll;
