@@ -874,14 +874,14 @@ rotate(360deg);
     width:52px;
     height:52px;
     border-radius:50%;
-    background:#8b1e2d;
-    border:2px solid #d8c27a;
+    background:#145a46;
+    border:2px solid #f5e8c8;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    color:#f5e7c2;
+    color:#145a46;
     font-family:'Great Vibes', cursive;
     font-size:24px;
 
