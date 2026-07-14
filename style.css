@@ -870,7 +870,7 @@ media(max-width:768px){
     height:140px;
     background:linear-gradient(135deg,#0f5c4a,#166b56,#1d7a61);
     color:#d4af37; /* Same gold as "Together with our families" */
-    border-radius:10px;
+    border-radius:3px;
     box-shadow:0 12px 30px rgba(0,0,0,.18);
     transition:transform 1.2s cubic-bezier(.22,.61,.36,1);
     z-index:3;
