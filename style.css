@@ -160,7 +160,7 @@ header h1{
 =========================== */
 
 #timeline{
-    padding:80px 20px;
+    padding:50px 20px;
 }
 
 #timeline h2{
@@ -231,6 +231,7 @@ header h1{
 
     #timeline h2{
         font-size:46px;
+        padding:30px;
     }
 
     .icon{
@@ -645,7 +646,7 @@ rotate(360deg);
 }
 .attire {
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
 }
 
 .attire h2 {
