@@ -716,7 +716,7 @@ rotate(360deg);
     align-items: center;
     gap: 10px;
 
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     padding: 10px;
     border-radius: 25px;
     box-shadow: 0 10px 25px rgba(0,0,0,.15);
@@ -752,7 +752,6 @@ rotate(360deg);
 media(max-width:768px){
 .rsvp h2{
   font-size: 46px;
-}
 }
 }
 
