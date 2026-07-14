@@ -676,11 +676,12 @@ rotate(360deg);
 @media(max-width:768px){
 .attire h2 {
     font-size: 46px;
+    padding: 30px 0px;
 }
 }
 .venue {
     text-align: center;
-    padding: 80px 0px;
+    padding: 50px 0px;
 }
 
 .venue h2 {
@@ -728,6 +729,7 @@ rotate(360deg);
 @media(max-width:768px){
 .venue h2 {
     font-size: 46px;
+    padding: 30px 0px;
 }
 }
 /* RSVP Section */
