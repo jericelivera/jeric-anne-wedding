@@ -684,7 +684,7 @@ rotate(360deg);
     width: 95%;
     margin: 0 auto;
     position: relative;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
 
     display: flex;
