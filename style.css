@@ -673,11 +673,8 @@ rotate(360deg);
     line-height: 1.8;
 }
 @media(max-width:768px){
-  .attire h2 {
-    font-family: 'Great Vibes', cursive;
+.attire h2 {
     font-size: 46px;
-    color: #d8c27a;
-    margin-bottom: 20px;
 }
 }
 .venue {
@@ -726,6 +723,11 @@ rotate(360deg);
     height: auto;
     display: block;
     border-radius: 20px;
+}
+@media(max-width:768px){
+.venue h2 {
+    font-size: 46px;
+}
 }
 /* RSVP Section */
 
