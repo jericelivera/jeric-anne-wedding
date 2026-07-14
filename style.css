@@ -672,6 +672,14 @@ rotate(360deg);
     font-size: 18px;
     line-height: 1.8;
 }
+@media(max-width:768px){
+  .attire h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 46px;
+    color: #d8c27a;
+    margin-bottom: 20px;
+}
+}
 .venue {
     text-align: center;
     padding: 80px 0px;
