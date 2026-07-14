@@ -231,7 +231,6 @@ header h1{
 
     #timeline h2{
         font-size:46px;
-        padding:30px;
     }
 
     .icon{
@@ -758,7 +757,7 @@ media(max-width:768px){
 .rsvp-subtitle{
     color:#f5f5f5;
     font-size:18px;
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
 
 #rsvpForm{
