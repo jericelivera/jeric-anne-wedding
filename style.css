@@ -329,6 +329,14 @@ footer{
 
 /* Mobile */
 
+.details h2{
+    text-align:center;
+    font-family:'Great Vibes', cursive;
+    font-size:58px;
+    color:#d8c27a;
+    margin-bottom:50px;
+}
+
 @media(max-width:768px){
 
 header h1{
@@ -375,9 +383,9 @@ header h1{
 .details h2{
     text-align:center;
     font-family:'Great Vibes', cursive;
-    font-size:58px;
+    font-size:46px;
     color:#d8c27a;
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 .details p{
