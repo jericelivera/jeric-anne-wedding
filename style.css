@@ -838,6 +838,22 @@ rotate(360deg);
     box-shadow:0 12px 30px rgba(0,0,0,.18);
     transition:transform 1.2s cubic-bezier(.22,.61,.36,1);
     z-index:3;
+    /* Double Gold Border */
+    border:2px solid #c8a24d;
+    position:relative;
+}
+
+.letter::before{
+    content:"";
+    position:absolute;
+    top:8px;
+    left:8px;
+    right:8px;
+    bottom:8px;
+    border:1px solid #e6c76a;
+    border-radius:6px;
+    pointer-events:none;
+}
 }
 
 .letter-content{
