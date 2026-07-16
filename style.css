@@ -92,11 +92,7 @@ body{
 .opening-subtitle,
 .opening-name,
 .and,
-.envelope-wrapper{
-    opacity:0;
-    clip-path:inset(0 100% 0 0);
-    z-index:100;
-}
+
 
 /* Together With Our Families */
 .opening-subtitle{
@@ -124,12 +120,7 @@ body{
     z-index:1;
 }
 
-/* Envelope */
-.envelope-wrapper{
-    animation:revealText 5s ease forwards;
-    animation-delay:5.5s;
-    z-index:100;
-}
+
 
 
 /* Main */
@@ -871,13 +862,14 @@ rotate(360deg);
 ================================= */
 
 .opening-content{
+    position:relative;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
     text-align:center;
     min-height:100vh;
-    padding:20px;
+    padding-top:80px;
 }
 
 .opening-subtitle{
@@ -905,6 +897,15 @@ rotate(360deg);
     margin-top:40px;
     cursor:pointer;
     perspective:1200px;
+    opacity:0;
+    clip-path:inset(0 100% 0 0);
+    animation:revealText 5s ease forwards;
+    animation-delay:5.5s;
+    z-index:100;
+    position:absolute;
+    left:50%;
+    top:320px; /* Adjust if needed */
+    transform:translateX(-50%);
 }
 
 .envelope{
