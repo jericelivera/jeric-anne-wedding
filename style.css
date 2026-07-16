@@ -77,37 +77,42 @@ body{
 @keyframes fadeInUp{
     from{
         opacity:0;
-        transform:translateY(50px) scale(.96);
+        transform:translateY(40px);
     }
-
     to{
         opacity:1;
-        transform:translateY(0) scale(1);
+        transform:translateY(0);
     }
 }
 
-.loading-content h3{
+.opening-subtitle{
     opacity:0;
-    animation:fadeInUp 1.5s ease forwards;
+    animation:fadeInUp 1.4s ease-out forwards;
     animation-delay:.2s;
 }
 
-.loading-content h1{
+.opening-name:first-of-type{
     opacity:0;
-    animation:fadeInUp 1.5s ease forwards;
-    animation-delay:.7s;
+    animation:fadeInUp 1.4s ease-out forwards;
+    animation-delay:.8s;
 }
 
-.loading-content p{
+.and{
     opacity:0;
-    animation:fadeInUp 1.5s ease forwards;
-    animation-delay:1.2s;
+    animation:fadeInUp 1.4s ease-out forwards;
+    animation-delay:1.4s;
 }
 
-#openBtn{
+.opening-name:last-of-type{
     opacity:0;
-    animation:fadeInUp 1.5s ease forwards;
-    animation-delay:1.7s;
+    animation:fadeInUp 1.4s ease-out forwards;
+    animation-delay:2s;
+}
+
+.envelope-wrapper{
+    opacity:0;
+    animation:fadeInUp 1.4s ease-out forwards;
+    animation-delay:2.6s;
 }
 
 
