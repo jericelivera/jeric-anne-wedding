@@ -73,6 +73,42 @@ body{
 #openBtn:hover{
     transform:scale(1.05);
 }
+/* Loading Content Animation */
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.loading-content h3{
+    opacity:0;
+    animation:fadeInUp 1s ease forwards;
+    animation-delay:.2s;
+}
+
+.loading-content h1{
+    opacity:0;
+    animation:fadeInUp 1s ease forwards;
+    animation-delay:.5s;
+}
+
+.loading-content p{
+    opacity:0;
+    animation:fadeInUp 1s ease forwards;
+    animation-delay:.8s;
+}
+
+#openBtn{
+    opacity:0;
+    animation:fadeInUp 1s ease forwards;
+    animation-delay:1.1s;
+}
+
 
 /* Main */
 
@@ -750,7 +786,7 @@ rotate(360deg);
 }
 @media(max-width:768px){
 .rsvp h2{
-  font-size: 46px;
+  font-size:46px;
 }
   
 }
