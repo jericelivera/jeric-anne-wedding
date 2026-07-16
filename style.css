@@ -87,32 +87,32 @@ body{
 
 .opening-subtitle{
     opacity:0;
-    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay:.2s;
+    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+    animation-delay:.3s;
 }
 
 .opening-name:first-of-type{
     opacity:0;
-    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay:1s;
+    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+    animation-delay:2.3s;
 }
 
 .and{
     opacity:0;
-    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay:2s;
+    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+    animation-delay:4.3s;
 }
 
 .opening-name:last-of-type{
     opacity:0;
-    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay:3s;
+    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+    animation-delay:6.3s;
 }
 
 .envelope-wrapper{
     opacity:0;
-    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay:4s;
+    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+    animation-delay:8.5s;
 }
 
 
