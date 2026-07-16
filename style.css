@@ -111,20 +111,20 @@ body{
 
 /* & */
 .and{
-    animation:revealText 1.5s ease forwards;
-    animation-delay:3.6s;
+    animation:revealText 1.7s ease forwards;
+    animation-delay:3.8s;
 }
 
 /* Anne Gabrielle Del Mundo */
 .opening-name:last-of-type{
-    animation:revealText 5s ease forwards;
+    animation:revealText 5.5s ease forwards;
     animation-delay:3.8s;
 }
 
 /* Envelope */
 .envelope-wrapper{
     animation:revealText 5s ease forwards;
-    animation-delay:7s;
+    animation-delay:6s;
 }
 
 
