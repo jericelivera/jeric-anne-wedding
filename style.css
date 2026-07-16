@@ -87,31 +87,31 @@ body{
 
 .opening-subtitle{
     opacity:0;
-    animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay:.2s;
 }
 
 .opening-name:first-of-type{
     opacity:0;
-    animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay:1s;
 }
 
 .and{
     opacity:0;
-    animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay:2s;
 }
 
 .opening-name:last-of-type{
     opacity:0;
-    animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay:3s;
 }
 
 .envelope-wrapper{
     opacity:0;
-    animation: fadeInUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: fadeInUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay:4s;
 }
 
