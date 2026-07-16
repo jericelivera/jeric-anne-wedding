@@ -117,13 +117,13 @@ body{
 
 /* Anne Gabrielle Del Mundo */
 .opening-name:last-of-type{
-    animation:revealText 3s ease forwards;
+    animation:revealText 4s ease forwards;
     animation-delay:4.8s;
 }
 
 /* Envelope */
 .envelope-wrapper{
-    animation:revealText 2s ease forwards;
+    animation:revealText 4s ease forwards;
     animation-delay:6.5s;
 }
 
