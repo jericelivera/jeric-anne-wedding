@@ -126,7 +126,7 @@ body{
 /* Envelope */
 .envelope-wrapper{
     animation:revealText 5s ease forwards;
-    animation-delay:5s;
+    animation-delay:5.5s;
     z-index:100;
 }
 
