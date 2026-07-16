@@ -871,14 +871,13 @@ rotate(360deg);
 ================================= */
 
 .opening-content{
-    position:relative;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:flex-start;
+    justify-content:center;
     text-align:center;
     min-height:100vh;
-    padding-top:80px;
+    padding:20px;
 }
 
 .opening-subtitle{
@@ -903,13 +902,9 @@ rotate(360deg);
 }
 
 .envelope-wrapper{
-    position:absolute;
-    left:50%;
-    top:320px; /* Adjust if needed */
-    transform:translateX(-50%);
+    margin-top:40px;
     cursor:pointer;
     perspective:1200px;
-    z-index:100;
 }
 
 .envelope{
