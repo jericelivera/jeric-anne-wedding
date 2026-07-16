@@ -119,12 +119,15 @@ body{
 .opening-name:last-of-type{
     animation:revealText 5.5s ease forwards;
     animation-delay:3.8s;
+    position:relative;
+    z-index:1;
 }
 
 /* Envelope */
 .envelope-wrapper{
     animation:revealText 5s ease forwards;
     animation-delay:5s;
+    z-index:100;
 }
 
 
@@ -928,7 +931,7 @@ rotate(360deg);
     border-radius:3px;
     box-shadow:0 12px 30px rgba(0,0,0,.18);
     transition:transform 1.2s cubic-bezier(.22,.61,.36,1);
-    z-index:3;
+    z-index:101;
 }
 
 .letter-content{
@@ -987,7 +990,7 @@ rotate(360deg);
     clip-path:polygon(0 0,50% 65%,100% 0,100% 100%,0 100%);
     border-radius:0 0 12px 12px;
     border:2px solid #d8c27a;
-    z-index:4;
+    z-index:102;
 }
 .seal{
     position: absolute;
@@ -998,7 +1001,7 @@ rotate(360deg);
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
-    z-index: 15;
+    z-index: 103;
 }
 /* ===============================
    Flap
@@ -1014,7 +1017,7 @@ rotate(360deg);
     clip-path:polygon(0 0,100% 0,50% 100%);
     transform-origin:top center;
     transition:transform .9s ease;
-    z-index:6;
+    z-index:104;
 }
 
 /* Envelope opens */
