@@ -73,46 +73,58 @@ body{
 #openBtn:hover{
     transform:scale(1.05);
 }
-/* Loading Content Animation */
-@keyframes fadeInUp{
+/* ===============================
+   Loading Text Reveal Animation
+================================= */
+
+@keyframes revealText{
     from{
         opacity:0;
-        transform:translateY(50px);
+        clip-path:inset(0 100% 0 0);
     }
     to{
         opacity:1;
-        transform:translateY(0);
+        clip-path:inset(0 0 0 0);
     }
 }
 
-.opening-subtitle{
+/* Initial state */
+.opening-subtitle,
+.opening-name,
+.and,
+.envelope-wrapper{
     opacity:0;
-    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
+    clip-path:inset(0 100% 0 0);
+}
+
+/* Together With Our Families */
+.opening-subtitle{
+    animation:revealText 2s ease forwards;
     animation-delay:.3s;
 }
 
+/* Jeric Elivera */
 .opening-name:first-of-type{
-    opacity:0;
-    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
-    animation-delay:2.3s;
+    animation:revealText 2s ease forwards;
+    animation-delay:1.8s;
 }
 
+/* & */
 .and{
-    opacity:0;
-    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
-    animation-delay:4.3s;
+    animation:revealText 2s ease forwards;
+    animation-delay:3.3s;
 }
 
+/* Anne Gabrielle Del Mundo */
 .opening-name:last-of-type{
-    opacity:0;
-    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
-    animation-delay:6.3s;
+    animation:revealText 2s ease forwards;
+    animation-delay:4.8s;
 }
 
+/* Envelope */
 .envelope-wrapper{
-    opacity:0;
-    animation:fadeInUp 2.5s cubic-bezier(0.22,1,0.36,1) forwards;
-    animation-delay:8.5s;
+    animation:revealText 2s ease forwards;
+    animation-delay:6.5s;
 }
 
 
