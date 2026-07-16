@@ -95,6 +95,7 @@ body{
 .envelope-wrapper{
     opacity:0;
     clip-path:inset(0 100% 0 0);
+    z-index:100;
 }
 
 /* Together With Our Families */
