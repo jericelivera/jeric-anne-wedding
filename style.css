@@ -477,8 +477,8 @@ header h1{
 }
 
 .navbar .logo img{
-    width:58px;
-    height:58px;
+    width:68px;
+    height:68px;
     object-fit:contain;
     filter:drop-shadow(0 3px 8px rgba(216,194,122,.35));
     transition:transform .3s ease, filter .3s ease;
@@ -513,8 +513,8 @@ header h1{
     }
 
     .navbar .logo img{
-        width:46px;
-        height:46px;
+        width:56px;
+        height:56px;
     }
 
     .navbar ul{
