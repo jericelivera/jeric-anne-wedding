@@ -1147,6 +1147,25 @@ rotate(360deg);
 .faq-item.active .faq-answer{
     display:block;
 }
+.section-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:52px;
+    font-weight:600;
+    color:#d8c27a;
+    text-align:center;
+    margin-bottom:50px;
+    letter-spacing:1px;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:2px;
+    background:#d8c27a;
+    margin:16px auto 0;
+}
 html{
     scroll-behavior: smooth;
 }
