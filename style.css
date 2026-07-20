@@ -1148,24 +1148,13 @@ rotate(360deg);
     display:block;
 }
 .section-title{
-    font-family:'Cormorant Garamond', serif;
-    font-size:52px;
-    font-weight:600;
+    font-family:'Great Vibes',cursive;
+    font-size:58px;
     color:#d8c27a;
-    text-align:center;
-    margin-bottom:50px;
-    letter-spacing:1px;
-    position:relative;
+    margin-bottom:15px;
 }
+  
 
-.section-title::after{
-    content:"";
-    display:block;
-    width:80px;
-    height:2px;
-    background:#d8c27a;
-    margin:16px auto 0;
-}
 html{
     scroll-behavior: smooth;
 }
