@@ -20,44 +20,43 @@ const seconds = document.getElementById("seconds");
 const envelope = document.querySelector(".envelope");
 const bgMusic = document.getElementById("bgMusic");
 
-let invitationOpened = false;
-
-function openWeddingInvitation() {
-    if (invitationOpened) return;
-    invitationOpened = true;
+openBtn.addEventListener("click", () => {
 
     envelope.classList.add("open");
-    openBtn.classList.add("clicked");
 
-    if (bgMusic) {
-        bgMusic.volume = 0.5;
-        bgMusic.play().then(() => {
-            console.log("Music started");
-        }).catch((error) => {
-            console.log("Music blocked:", error);
-        });
-    }
+if (bgMusic) {
+    bgMusic.volume = 0.5;
 
-    // Keep the cinematic sequence visible: zoom -> flap -> invitation rises.
-    setTimeout(() => {
-        loading.classList.add("opening-complete");
-    }, 2350);
-
-    setTimeout(() => {
-        loading.style.display = "none";
-        main.style.display = "block";
-        main.classList.add("invitation-reveal");
-        window.scrollTo(0, 0);
-    }, 3300);
+    bgMusic.play()
+    .then(() => {
+        console.log("Music started");
+    })
+    .catch((error) => {
+        console.log("Music blocked:", error);
+    });
 }
 
-openBtn.addEventListener("click", openWeddingInvitation);
+// Wait for flap and card animation
+setTimeout(() => {
+    loading.style.transition = "opacity 1s ease";
+    loading.style.opacity = "0";
+}, 1500);
 
-openBtn.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        openWeddingInvitation();
-    }
+// Show the main invitation
+setTimeout(() => {
+    loading.style.display = "none";
+    main.style.display = "block";
+
+    main.style.opacity = "0";
+    main.style.transition = "opacity 1s ease";
+
+    setTimeout(() => {
+        main.style.opacity = "1";
+    }, 50);
+
+    window.scrollTo(0, 0);
+}, 2500);
+
 });
 
 // Countdown
